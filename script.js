@@ -1,5 +1,5 @@
 function getJson(){
-    let pokemon = $('#pname').val()
+    let pokemon = $('#pname').val().toLowerCase()
     $.each($('p'), function(index, value) {
         $(value).remove();
     });
