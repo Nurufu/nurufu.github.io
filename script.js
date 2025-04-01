@@ -1,3 +1,15 @@
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    let btn = document.getElementById("topbtn");
+
+    if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+        btn.style.display = "block";
+    } else {
+        btn.style.display = "none";
+    }
+}
+
 function getJson(){
     let pokemon = $('#pname').val().toLowerCase()
     $.each($('p'), function(index, value) {
@@ -18,6 +30,7 @@ function populateHeader(obj) {
     $.each(obj.spawns, function(index, value) {
         //Create paragraph element
         var p = document.createElement("p");
+        p.id = "pokemon"
         //Tweak text for 'surface context'
         if(value.context == "surface") value.context = "water surface"
         //Add guaranteed elements
@@ -96,4 +109,8 @@ function populateHeader(obj) {
         }
         header.appendChild(p);
     });
+}
+
+function topScroll(){
+    window.scrollTo({top:0, behavior: 'smooth'});
 }
