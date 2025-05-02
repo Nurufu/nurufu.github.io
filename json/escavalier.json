@@ -1,22 +1,24 @@
 {
-    "enabled": "true",
+    "enabled": true,
     "neededInstalledMods": [],
     "neededUninstalledMods": [],
-    "spawns": [     
+    "spawns": [
         {
-            "id": "darkrai-1",
-            "pokemon": "darkrai",
+            "id": "escavalier-1",
+            "pokemon": "escavalier",
             "presets": [
                 "natural"
             ],
             "type": "pokemon",
             "context": "grounded",
-            "bucket": "ultra-rare",
-            "level": "70",
-            "weight": 3.0,
+            "bucket": "common",
+            "level": "27-50",
+            "weight": 0.3,
             "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
                 "biomes": [
-                    "#cobblemon:is_deep_dark"
+                    "#cobblemon:is_swamp"
                 ]
             }
         }

@@ -41,7 +41,7 @@ function populateHeader(obj) {
         <li><b>Weight:</b> ${value.weight}</li>
         <li><b>Biome(s):</b> ${value.condition.biomes}</li>`;
         //Base Conditions
-        if(value.presets) p.innerHTML += `<li><b>Presets:</b> ${value.presets}`
+        if(value.presets) p.innerHTML += `<li><b>Presets:</b> <a onmouseenter="test(this)">${value.presets}</a>`
         if(value.condition.minSkyLight && value.condition.maxSkyLight) p.innerHTML += `<li><b>Sky Light:</b> ${value.condition.minSkyLight} - ${value.condition.maxSkyLight}</li>`
         if(value.condition.timeRange) p.innerHTML += `<li><b>Time of day:</b> ${value.condition.timeRange}</li>`
         if(value.condition.canSeeSky) p.innerHTML += `<li><b>Can see Sky:</b> ${value.condition.canSeeSky}</li>`
@@ -113,4 +113,8 @@ function populateHeader(obj) {
 
 function topScroll(){
     window.scrollTo({top:0, behavior: 'smooth'});
+}
+
+function test(a){
+    console.log(a.val)
 }

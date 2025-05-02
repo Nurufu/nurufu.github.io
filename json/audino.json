@@ -1,24 +1,25 @@
 {
-    "enabled": true,
+    "enabled": "true",
     "neededInstalledMods": [],
     "neededUninstalledMods": [],
     "spawns": [
         {
-            "id": "meltan-1",
-            "pokemon": "meltan",
+            "id": "audino-1",
+            "pokemon": "audino",
             "presets": [
-                "ancient_city",
-				"stronghold"
+                "natural"
             ],
             "type": "pokemon",
             "context": "grounded",
             "bucket": "rare",
-            "level": "11-41",
-            "weight": 0.5,
+            "level": "19-47",
+            "weight": 5.0,
             "condition": {
-                "canSeeSky": false,
+                "canSeeSky": true,
                 "biomes": [
-                    "#cobblemon:is_overworld"
+                    "#cobblemon:is_plains",
+					"#cobblemon:is_highlands",
+					"#cobblemon:is_forest"
                 ]
             }
         }
