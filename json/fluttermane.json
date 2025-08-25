@@ -1,0 +1,60 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+    {
+       "id": "fluttermane-1",
+       "pokemon": "fluttermane",
+       "presets": [
+           "natural"
+       ],
+       "type": "pokemon",
+       "context": "grounded",
+       "bucket": "rare",
+       "level": "40-65",
+       "weight": 1.5,
+       "condition": {
+           "biomes": [
+               "#cobblemon:is_spooky"
+           ]
+       },
+      "weightMultipliers": [
+        {
+          "multiplier": 1.5,
+          "condition": {
+            "neededNearbyBlocks": [
+              "minecraft:pitcher_plant"
+            ]
+          }
+        }
+      ],
+       "timeRange":"night"
+    },
+    {
+    "id": "fluttermane-2",
+    "pokemon": "fluttermane",
+    "type": "pokemon",
+    "context": "grounded",
+    "bucket": "rare",
+    "level": "40-65",
+    "weight": 1.5,
+    "condition": {
+        "biomes": [
+            "#cobblemon:is_swamp"
+        ]
+       },
+      "weightMultipliers": [
+        {
+          "multiplier": 1.5,
+          "condition": {
+            "neededNearbyBlocks": [
+              "minecraft:pitcher_plant"
+            ]
+          }
+        }
+      ],
+        "timeRange":"night"
+     }
+    ]
+}
