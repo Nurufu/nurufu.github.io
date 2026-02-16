@@ -7,44 +7,23 @@
             "id": "dunsparce-1",
             "pokemon": "dunsparce",
             "presets": [
-                "natural",
-                "wild"
-            ],
-            "type": "pokemon",
-            "context": "grounded",
-            "bucket": "rare",
-            "level": "15",
-            "weight": 8.0,
-            "condition": {
-                "biomes": [
-                    "#cobblemon:is_mountain"
-
-                ]
-            }
-        },
-        {
-            "id": "dunsparce-2",
-            "pokemon": "dunsparce",
-            "presets": [
                 "natural"
             ],
             "type": "pokemon",
             "context": "grounded",
-            "bucket": "rare",
-            "level": "20",
-            "weight": 9.0,
+            "bucket": "uncommon",
+            "level": "17-42",
+            "weight": 1.68,
             "condition": {
                 "minSkyLight": 0,
                 "maxSkyLight": 7,
                 "biomes": [
-                    "#cobblemon:is_cave"
-                ],
-                "minY": 0
+                    "#cobblemon:is_overworld"
+                ]
             },
             "anticondition": {
                 "biomes": [
-                    "#cobblemon:is_deep_dark",
-                    "#cobblemon:is_mountain"
+                    "#cobblemon:is_deep_dark"
                 ]
             }
         }

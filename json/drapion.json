@@ -12,60 +12,21 @@
             ],
             "type": "pokemon",
             "context": "grounded",
-            "bucket": "rare",
-            "level": "45-55",
-            "weight": 6.6,
-            "condition": {
-                "biomes": [
-                    "#cobblemon:is_swamp"
-                    
-
-                ]
-            }
-        },
-        {
-            "id": "drapion-2",
-            "pokemon": "drapion",
-            "presets": [
-                "natural"
-            ],
-            "type": "pokemon",
-            "context": "grounded",
-            "bucket": "rare",
-            "level": "45-55",
-            "weight": 9.0,
-            "condition": {
-                "minSkyLight": 0,
-                "maxSkyLight": 7,
-                "biomes": [
-                    "#cobblemon:is_cave"
-                ],
-                "minY": 0
+            "bucket": "common",
+            "level": "40-50",
+            "weight": 0.2,
+            "weightMultiplier": {
+                "multiplier": 1.5,
+                "condition": {
+                    "timeRange": "night"
+                }
             },
-            "anticondition": {
-                "biomes": [
-                    "#cobblemon:is_deep_dark",
-                    "#cobblemon:is_mountain"
-                ]
-            }
-        },
-        {
-            "id": "drapion-3",
-            "pokemon": "drapion",
-            "presets": [
-                "natural",
-                "wild"
-            ],
-            "type": "pokemon",
-            "context": "grounded",
-            "bucket": "rare",
-            "level": "45-55",
-            "weight": 3.1,
             "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
                 "biomes": [
+                    "#cobblemon:is_badlands",
                     "#cobblemon:is_desert"
-                    
-
                 ]
             }
         }

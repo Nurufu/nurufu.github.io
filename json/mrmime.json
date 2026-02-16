@@ -3,7 +3,7 @@
     "neededInstalledMods": [],
     "neededUninstalledMods": [],
     "spawns": [
-       {
+        {
             "id": "mrmime-1",
             "pokemon": "mrmime",
             "presets": [
@@ -14,9 +14,10 @@
             "context": "grounded",
             "bucket": "uncommon",
             "level": "26-46",
-            "weight": 1.0,
+            "weight": 0.32,
             "condition": {
-                "canSeeSky": true,
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
                 "biomes": [
                     "#cobblemon:is_overworld"
                 ]
@@ -31,18 +32,21 @@
             "id": "mrmime-2",
             "pokemon": "mrmime",
             "presets": [
-                "natural",
-                "village"
+                "natural"
             ],
             "type": "pokemon",
             "context": "grounded",
             "bucket": "uncommon",
             "level": "26-46",
-            "weight": 1.0,
+            "weight": 0.32,
             "condition": {
-                "canSeeSky": true,
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
                 "biomes": [
                     "#cobblemon:is_overworld"
+                ],
+                "structures": [
+                    "#minecraft:village"
                 ]
             },
             "anticondition": {
@@ -68,42 +72,6 @@
                     "#cobblemon:is_overworld"
                 ]
             }
-        },
-        {
-            "id": "mrmime-galarian-4",
-            "pokemon": "mrmime galarian",
-            "presets": [
-                "village"
-            ],
-            "type": "pokemon",
-            "context": "grounded",
-            "bucket": "uncommon",
-            "level": "26-46",
-            "weight": 8.0,
-            "condition": {
-                "canSeeSky": true,
-                "biomes": [
-                    "#cobblemon:is_freezing"
-                ]
-            }
-        },
-        {
-            "id": "mrmime-galarian-4",
-        "pokemon": "mrmime galarian",
-        "presets": [
-            "natural"
-        ],
-        "type": "pokemon",
-        "context": "grounded",
-        "bucket": "rare",
-        "level": "26-46",
-        "weight": 8.0,
-        "condition": {
-            "canSeeSky": true,
-            "biomes": [
-                "#cobblemon:is_freezing"
-            ]
         }
-    }
-]
+    ]
 }

@@ -4,34 +4,30 @@
     "neededUninstalledMods": [],
     "spawns": [
         {
-            "id": "croagunk-1",
-            "pokemon": "croagunk",
+            "id": "toxicroak-1",
+            "pokemon": "toxicroak",
+            "presets": [
+                "natural",
+                "wild"
+            ],
             "type": "pokemon",
             "context": "grounded",
-            "bucket": "rare",
-            "level": "10-36",
-            "weight": 4.1,
+            "bucket": "common",
+            "level": "37-49",
+            "weight": 0.2,
+            "weightMultiplier": {
+                "multiplier": 5.0,
+                "condition": {
+                    "isRaining": true
+                }
+            },
             "condition": {
-                "canSeeSky": true,
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
                 "biomes": [
+                    "#cobblemon:is_jungle",
                     "#cobblemon:is_swamp"
                 ]
-            }
-        },
-		{
-            "id": "croagunk-2",
-            "pokemon": "croagunk",
-            "type": "pokemon",
-            "context": "grounded",
-            "bucket": "uncommon",
-            "level": "10-36",
-            "weight": 1.45,
-            "condition": {
-                "canSeeSky": true,
-                "biomes": [
-                    "#cobblemon:is_swamp"
-                ],
-				"isRaining": true
             }
         }
     ]

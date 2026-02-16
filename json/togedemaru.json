@@ -6,15 +6,26 @@
         {
             "id": "togedemaru-1",
             "pokemon": "togedemaru",
+            "presets": [
+                "natural",
+                "wild"
+            ],
             "type": "pokemon",
             "context": "grounded",
             "bucket": "uncommon",
-            "level": "15-32",
-            "weight": 4.8,
+            "level": "19-44",
+            "weight": 10.0,
+            "weightMultiplier": {
+                "multiplier": 5.0,
+                "condition": {
+                    "isThundering": true
+                }
+            },
             "condition": {
-                "canSeeSky": true,
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
                 "biomes": [
-                    "#minecraft:is_badlands"
+                    "#cobblemon:is_hills"
                 ]
             }
         }

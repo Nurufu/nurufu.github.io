@@ -7,16 +7,19 @@
             "id": "snorunt-1",
             "pokemon": "snorunt",
             "presets": [
-                "natural"
+                "natural",
+                "wild"
             ],
             "type": "pokemon",
             "context": "grounded",
             "bucket": "uncommon",
-            "level": "8-25",
-            "weight": 8.0,
+            "level": "5-30",
+            "weight": 1.68,
             "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
                 "biomes": [
-                    "#cobblemon:is_cold"
+                    "#cobblemon:is_glacial"
                 ]
             }
         },
@@ -28,13 +31,17 @@
             ],
             "type": "pokemon",
             "context": "grounded",
-            "bucket": "rare",
-            "level": "10-32",
-            "weight": 8.0,
+            "bucket": "uncommon",
+            "level": "5-30",
+            "weight": 8.4,
             "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 7,
                 "biomes": [
-                    "#cobblemon:is_cold"
-                ]
+                    "#cobblemon:is_snowy",
+                    "#cobblemon:is_tundra"
+                ],
+                "minY": 0
             }
         },
         {
@@ -46,11 +53,16 @@
             "type": "pokemon",
             "context": "grounded",
             "bucket": "common",
-            "level": "4-25",
-            "weight": 4.0,
+            "level": "5-30",
+            "weight": 9.2,
             "condition": {
+                "minSkyLight": 1,
+                "maxSkyLight": 15,
                 "biomes": [
-                    "#cobblemon:is_freezing"
+                    "#cobblemon:is_overworld"
+                ],
+                "structures": [
+                    "minecraft:igloo"
                 ]
             }
         },
@@ -62,12 +74,12 @@
             ],
             "type": "pokemon",
             "context": "grounded",
-            "bucket": "rare",
-            "level": "15-43",
-            "weight": 6.0,
+            "bucket": "uncommon",
+            "level": "5-30",
+            "weight": 8.4,
             "condition": {
                 "biomes": [
-                    "#cobblemon:is_freezing"
+                    "#cobblemon:nether/is_frozen"
                 ]
             }
         }

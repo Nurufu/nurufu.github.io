@@ -1,3 +1,1 @@
-for x in *; do
-    mv $x `echo $x | cut -6 5-`
-done
+for f in *; do echo mv "$f" "${f:5}"; done

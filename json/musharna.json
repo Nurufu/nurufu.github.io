@@ -6,66 +6,44 @@
         {
             "id": "musharna-1",
             "pokemon": "musharna",
+            "presets": [
+                "natural",
+                "urban"
+            ],
             "type": "pokemon",
             "context": "grounded",
-            "bucket": "rare",
-            "level": "20-45",
-            "weight": 3.2,
+            "bucket": "common",
+            "level": "24-49",
+            "weight": 0.5,
             "condition": {
-                "canSeeSky": true,
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
                 "biomes": [
-                    "#minecraft:is_overworld"
+                    "#cobblemon:is_overworld"
                 ],
-                "neededNearbyBlocks": [
-                    "minecraft:white_bed",
-                    "minecraft:orange_bed",
-                    "minecraft:magenta_bed",
-                    "minecraft:light_blue_bed",
-                    "minecraft:yellow_bed",
-                    "minecraft:lime_bed",
-                    "minecraft:pink_bed",
-                    "minecraft:gray_bed",
-                    "minecraft:light_gray_bed",
-                    "minecraft:cyan_bed",
-                    "minecraft:purple_bed",
-                    "minecraft:blue_bed",
-                    "minecraft:brown_bed",
-                    "minecraft:green_bed",
-                    "minecraft:red_bed",
-                    "minecraft:black_bed"
-                ]
+                "timeRange": "night"
             }
         },
         {
             "id": "musharna-2",
             "pokemon": "musharna",
+            "presets": [
+                "natural"
+            ],
             "type": "pokemon",
             "context": "grounded",
-            "bucket": "uncommon",
-            "level": "10-25",
-            "weight": 5.8,
+            "bucket": "common",
+            "level": "24-49",
+            "weight": 0.5,
             "condition": {
-                "canSeeSky": true,
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
                 "biomes": [
-                    "#minecraft:is_end"
+                    "#cobblemon:is_overworld"
                 ],
-                "neededNearbyBlocks": [
-                    "minecraft:white_bed",
-                    "minecraft:orange_bed",
-                    "minecraft:magenta_bed",
-                    "minecraft:light_blue_bed",
-                    "minecraft:yellow_bed",
-                    "minecraft:lime_bed",
-                    "minecraft:pink_bed",
-                    "minecraft:gray_bed",
-                    "minecraft:light_gray_bed",
-                    "minecraft:cyan_bed",
-                    "minecraft:purple_bed",
-                    "minecraft:blue_bed",
-                    "minecraft:brown_bed",
-                    "minecraft:green_bed",
-                    "minecraft:red_bed",
-                    "minecraft:black_bed"
+                "timeRange": "night",
+                "structures": [
+                    "#minecraft:village"
                 ]
             }
         }

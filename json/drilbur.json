@@ -6,24 +6,24 @@
         {
             "id": "drilbur-1",
             "pokemon": "drilbur",
-            "type": "pokemon",
             "presets": [
                 "natural"
             ],
+            "type": "pokemon",
             "context": "grounded",
             "bucket": "common",
-            "level": "8-31",
-            "weight": 6.1,
+            "level": "8-33",
+            "weight": 9.0,
             "condition": {
-                "canSeeSky": false,
-				"minY": 0,
+                "minSkyLight": 0,
+                "maxSkyLight": 7,
                 "biomes": [
                     "#cobblemon:is_overworld"
                 ]
             },
             "anticondition": {
                 "biomes": [
-                    "#cobblemon:is_abyss"
+                    "#cobblemon:is_deep_dark"
                 ]
             }
         }

@@ -1,5 +1,5 @@
 {
-    "enabled": "true",
+    "enabled": true,
     "neededInstalledMods": [],
     "neededUninstalledMods": [],
     "spawns": [
@@ -7,32 +7,34 @@
             "id": "gothorita-1",
             "pokemon": "gothorita",
             "presets": [
-                "natural"
+                "mansion"
             ],
             "type": "pokemon",
             "context": "grounded",
-            "bucket": "rare",
-            "level": "12-35",
-            "weight": 5.0,
+            "bucket": "common",
+            "level": "32-39",
+            "weight": 0.54,
             "condition": {
-                "timeRange": "night",
+                "canSeeSky": false,
                 "biomes": [
-                    "#cobblemon:is_spooky"
+                    "#cobblemon:is_overworld"
                 ]
             }
         },
         {
             "id": "gothorita-2",
             "pokemon": "gothorita",
+            "presets": [
+                "end_city"
+            ],
             "type": "pokemon",
             "context": "grounded",
-            "bucket": "rare",
-            "level": "5-35",
-            "weight": 8,
+            "bucket": "uncommon",
+            "level": "32-39",
+            "weight": 1.44,
             "condition": {
-                "canSeeSky": false,
                 "biomes": [
-                    "#minecraft:is_end"
+                    "#cobblemon:is_end"
                 ]
             }
         }

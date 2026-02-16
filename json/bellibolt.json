@@ -6,16 +6,30 @@
         {
             "id": "bellibolt-1",
             "pokemon": "bellibolt",
+            "presets": [
+                "natural"
+            ],
             "type": "pokemon",
             "context": "grounded",
-            "bucket": "uncommon",
-            "level": "15-32",
-            "weight": 1.8,
+            "bucket": "common",
+            "level": "22-50",
+            "weight": 0.3,
+            "weightMultiplier": {
+                "multiplier": 5.0,
+                "condition": {
+                    "isThundering": true
+                }
+            },
             "condition": {
-                "canSeeSky": true,
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
                 "biomes": [
-                    "minecraft:mangrove_swamp",
-                    "minecraft:swamp"
+                    "#cobblemon:is_freshwater"
+                ]
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_freezing"
                 ]
             }
         }

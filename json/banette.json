@@ -1,5 +1,5 @@
 {
-    "enabled": "true",
+    "enabled": true,
     "neededInstalledMods": [],
     "neededUninstalledMods": [],
     "spawns": [
@@ -7,37 +7,83 @@
             "id": "banette-1",
             "pokemon": "banette",
             "presets": [
-                "antitallflower"
+                "natural"
             ],
             "type": "pokemon",
             "context": "grounded",
-            "bucket": "rare",
-            "level": "37-45",
-            "weight": 7.0,
+            "bucket": "common",
+            "level": "37-46",
+            "weight": 1.0,
             "condition": {
-                "canSeeSky": false,
-                "minHeight":2,
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
                 "biomes": [
-                    "minecraft:deep_dark"
-                ]
+                    "#cobblemon:is_spooky"
+                ],
+                "timeRange": "night"
             }
         },
         {
             "id": "banette-2",
             "pokemon": "banette",
             "presets": [
+                "natural",
+                "urban"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "37-46",
+            "weight": 1.6,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#cobblemon:is_overworld"
+                ],
+                "timeRange": "night"
+            }
+        },
+        {
+            "id": "banette-3",
+            "pokemon": "banette",
+            "presets": [
                 "natural"
             ],
             "type": "pokemon",
             "context": "grounded",
-            "bucket": "rare",
-            "level": "37-45",
+            "bucket": "uncommon",
+            "level": "37-46",
+            "weight": 1.6,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#cobblemon:is_overworld"
+                ],
+                "timeRange": "night",
+                "structures": [
+                    "#minecraft:village"
+                ]
+            }
+        },
+        {
+            "id": "banette-4",
+            "pokemon": "banette",
+            "presets": [
+                "mansion"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "37-46",
             "weight": 1.0,
             "condition": {
-                "timeRange": "night",
+                "canSeeSky": false,
                 "biomes": [
-                    "#cobblemon:is_plains"
-                ]
+                    "#cobblemon:is_overworld"
+                ],
+                "timeRange": "night"
             }
         }
     ]
